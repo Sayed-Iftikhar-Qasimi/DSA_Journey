@@ -5,7 +5,7 @@ int BinSearch(int arr[], int n , int target)
 {
         // {1,2,3,4,5,6,7,8,9};   5
     int start = 0 ; 
-    int end = n; 
+    int end = n-1; 
 
     while(start<=end)
     {
@@ -27,7 +27,7 @@ int main()
 {
     int n = 9;
     int arr[n] = {1,2,3,4,5,6,7,8,9};
-    int target = 9;
+    int target = 1;
 
 
     int result = BinSearch(arr, n , target);
