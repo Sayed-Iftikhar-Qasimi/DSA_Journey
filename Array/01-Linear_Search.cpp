@@ -24,7 +24,7 @@ int main()
     if(result!=-1)
         cout << "The Target found on index " << result << endl;
     else
-        cout << "Target not found in arra" << endl;
+        cout << "Target not found in array" << endl;
 
     return 0;
 }
