@@ -15,7 +15,6 @@ int MaxSubarraySum(int arr[], int n){
 
             if(maxSubarraySum < subArraySum)
                 maxSubarraySum = subArraySum; }
-        cout << endl;
     }
     return maxSubarraySum;
 }
