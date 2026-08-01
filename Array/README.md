@@ -9,6 +9,7 @@
 - Running Maximum tracking
 - Running Sum + Maximum tracking (carry forward, no recomputation)
 - Kadane's Algorithm (reset when sum becomes liability)
+- Running Minimum + Running Maximum (track best buy, best profit)
 
 ## Problems
 
@@ -21,4 +22,5 @@
 | 5 | Print All Subarrays (Brute Force) | Nested Loops (start-end-print) | O(n³) | O(1) | - |
 | 6 | Max Subarray Sum (Brute Force) | Nested Loops + Running Max | O(n³) | O(1) | [LeetCode #53](link) |
 | 7 | Max Subarray Sum (Better Brute Force) | Running Sum + Running Max | O(n²) | O(1) | [LeetCode #53](link) |
-| 8 | Max Subarray Sum (Kadane's) | Reset When Negative + Running Max | O(n) | O(1) | [LeetCode #53](link) |
+| 8 | Max Subarray Sum (Kadane's) | Greedy Reset + Running Max | O(n) | O(1) | [LeetCode #53](link) |
+| 9 | Best Time to Buy and Sell Stock | Running Min + Running Max | O(n) | O(1) | [LeetCode #121](link) |
