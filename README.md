@@ -12,7 +12,7 @@ Apna College sheet → LeetCode (same topic) → Striver's sheet (extra challeng
 
 | Topic | Status | Problems Solved |
 |-------|--------|-----------------|
-| Arrays | 🔄 In Progress | 7/30 |
+| Arrays | 🔄 In Progress | 8/30 |
 | Strings | ⏳ Not Started | 0/? |
 | Recursion | ⏳ Not Started | 0/? |
 | Linked Lists | ⏳ Not Started | 0/? |
