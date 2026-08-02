@@ -16,7 +16,7 @@ void bubbleSort(int num[], int n)
 
     for(int i=0; i<n; i++)
     {
-        cout << num[i] << " "; 
+        cout << num[i] << " ";
     }
 
 
