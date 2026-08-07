@@ -31,7 +31,7 @@ void characterArraySort(char arr[], int n)
 
 int main()
 {
-    char arr[] = {'f','b','a','e','c'};
+    char arr[] = {'f','b','a','e','c','d'};
     int n = size(arr);
 
     characterArraySort(arr, n);
