@@ -1,9 +1,11 @@
 #include<iostream>
+#include<algorithm>
 using namespace std; 
 
+
+// Using Brute Force Approach
 bool containsDuplicate(int arr[], int n)
 {
-
     for(int i=0; i<n-1; i++)
     {
         int start = i+1;
@@ -13,7 +15,19 @@ bool containsDuplicate(int arr[], int n)
                 return true;
         }
     }
+    return false;
+}
 
+bool containsDuplicateSortMethod(int arr[], int n)
+{
+    sort(arr, arr+n);
+
+    for(int i=1; i<n; i++)
+    {
+        int prev= i - 1; 
+        if(arr[prev] == arr[i])
+            return true;
+    }
     return false;
 
 }
