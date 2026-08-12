@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std; 
 
-void diagonalSum(int arr[][4], int rows ,int cols)
+int diagonalSum(int arr[][4], int rows ,int cols)
 {
 
     int primaryDiagonalSum = 0 ; 
@@ -13,15 +13,16 @@ void diagonalSum(int arr[][4], int rows ,int cols)
         {
             if(r==c){
                 primaryDiagonalSum += arr[r][c];
-            }else if(r+c==cols-1)
+            }else if(cols-1-r==c)
             {
                 secondryDiagonalSum += arr[r][c];
             }
 
         }
     }
-    cout << "Primary Diagonal Sum: " << primaryDiagonalSum << endl;
-    cout << "Secondy Diagonal Sum: " << secondryDiagonalSum << endl;
+    
+    int sum = primaryDiagonalSum + secondryDiagonalSum;
+    return sum;
 }
 
 int main()
@@ -33,7 +34,8 @@ int main()
                       {9,10,11,12},
                       {13,14,15,16} };
 
-    diagonalSum(arr, r, c);
+    int total = diagonalSum(arr, r, c);
+    cout << "Diagonal Sum: " << total << endl;
 
     return 0;
 }
