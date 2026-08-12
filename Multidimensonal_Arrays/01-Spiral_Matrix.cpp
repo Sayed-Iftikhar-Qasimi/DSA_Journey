@@ -23,46 +23,42 @@ void spiralMatrix(int arr[][4], int rows, int cols)
 
     while(srow<=erow && scol<=ecol)    
     {             
-    
             // Top
             for(int j=scol; j<=ecol; j++)
                 cout << arr[srow][j] << "  ";
-         
+            
             // right
             for(int k=srow+1; k<=erow; k++)
                 cout << arr[k][ecol]  << " ";
-        
+
             // Bottom
-            for(int l=ecol-1; l>=scol; l--){
-                if (srow == erow)
-                    break;
-                cout << arr[erow][l] << " ";
-            }
+            if(srow!=erow){
+                for(int l=ecol-1; l>=scol; l--)
+                    cout << arr[erow][l] << " "; }
+            
             // Left
+            if(scol!=ecol){
             for(int m=erow-1; m>=srow+1; m--)
-            {
-                if(scol == ecol)
-                    break;
                 cout << arr[m][scol] << " ";}
+
             scol++;
-            srow++; 
             erow--;
+            srow++; 
             ecol--;
-        
+
 }
 }
 
 
 int main()
 {
-    int arr[4][4] = { {1,2,3,4},
+    int arr[3][4] = { {1,2,3,4},
                       {5,6,7,8},
-                      {9,10,11,12},
-                      {13,14,15,16}
+                      {9,10,11,12}
                      };
 
     int cols = 4; 
-    int rows = 4; 
+    int rows = 3; 
 
     spiralMatrix(arr,rows, cols);
 
