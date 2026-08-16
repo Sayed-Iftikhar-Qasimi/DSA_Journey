@@ -20,6 +20,23 @@ bool check_Palindrom(char word[], int size)
     return true;
 }
 
+
+bool CheckPalindrom(char word[], int size)
+{
+    int start = 0; 
+    int end = size - 1; 
+
+
+    while(start<=end)
+    {
+        if(word[start++] != word[end--])
+            return false;
+        
+    }
+
+    return true;
+}
+
 int main()
 {
 
@@ -27,7 +44,7 @@ int main()
     int size = 7;
 
 
-   bool result = check_Palindrom(word, size);
+   bool result = CheckPalindrom(word, size);
 
    if(result)
         cout << "Valid Plaindrome" << endl;
