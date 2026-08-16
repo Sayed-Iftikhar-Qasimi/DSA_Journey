@@ -6,7 +6,7 @@ pair<int, int> Search(int arr[][4], int n , int m , int target)
 {
     int col = m-1;
     int row = 0;
-    while(row<3 || col>0)
+    while(row<=n|| col>=0)
     {
         int start = arr[row][col];
 
