@@ -12,7 +12,6 @@ bool check_valid_Anagram(char arr[],char word[], int size)
         if(arr[i] != word[i])
             return false;
     }
-
     return true;
 }
 
