@@ -26,7 +26,7 @@ pair<int, int> TwoSum(vector<int> &nums, int target)
 
 int main()
 {
-    vector <int> nums = {3,2};
+    vector <int> nums = {3,7,9,10,11};
     int target = 19;
 
     auto p = TwoSum(nums, target);
