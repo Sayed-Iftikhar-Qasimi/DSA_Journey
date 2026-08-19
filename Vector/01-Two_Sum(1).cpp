@@ -21,7 +21,7 @@ pair<int,int> TwoSum(vector<int> &nums, int target)
 
 int main()
 {
-    vector<int> nums = {3,3};
+    vector<int> nums = {3,2,4};
     int target = 6;
 
 
